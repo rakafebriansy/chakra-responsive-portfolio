@@ -2,6 +2,9 @@ import { FaGithub, FaInstagram, FaLinkedin, FaMoon, FaSun } from 'react-icons/fa
 import './App.css'
 import { Box, Flex, Heading, IconButton, Spacer, VStack } from "@chakra-ui/react"
 import { ColorModeButton, useColorModeValue } from './components/ui/color-mode';
+import HeaderSection from './components/sections/Header';
+import ProfileSection from './components/sections/Profile';
+import SocialSection from './components/sections/Social';
 
 function App() {
 
@@ -24,6 +27,9 @@ function App() {
             <ColorModeButton rounded='full' bg={useColorModeValue('teal.100', 'teal.900')} />
           </Flex>
         </Flex>
+        <HeaderSection />
+        <ProfileSection />
+        <SocialSection />
       </VStack>
     </Box>
   );
