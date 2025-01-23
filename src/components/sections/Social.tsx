@@ -4,17 +4,17 @@ import { FaFacebook, FaGoogle, FaShopify, FaSpotify } from "react-icons/fa";
 
 const Social: React.FC = ({ }) => {
     return (
-        <HStack spaceX='24'>
-            <Icon boxSize='3rem'>
+        <HStack spaceX={{ base: '12', lg: '24' }}>
+            <Icon boxSize={{ base: '2rem', lg: '3rem' }}>
                 <FaFacebook />
             </Icon>
-            <Icon boxSize='3rem'>
+            <Icon boxSize={{ base: '2rem', lg: '3rem' }}>
                 <FaGoogle />
             </Icon>
-            <Icon boxSize='3rem'>
+            <Icon boxSize={{ base: '2rem', lg: '3rem' }}>
                 <FaSpotify />
             </Icon>
-            <Icon boxSize='3rem'>
+            <Icon boxSize={{ base: '2rem', lg: '3rem' }}>
                 <FaShopify />
             </Icon>
         </HStack>
